@@ -1,0 +1,22 @@
+#startup
+logfile screenlogs/log.%n
+deflog on
+screen 1
+#other settings
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+defscrollback 2000
+vbell off
+autodetach on
+#Binds
+bind s split
+bind - resize -3
+bind + resize +3
+bind t title
+bind x remove
+bind k kill
+bind m lastmsg
+#screen count starts at 1
+bind c screen 1
+bind 0 select 10
+#escape "``"
